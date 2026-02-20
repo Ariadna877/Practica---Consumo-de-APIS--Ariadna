@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscador de Cócteles</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Título principal -->
+        <h1>🍹 Buscador de Cócteles</h1>
+
+        <!-- Caja de búsqueda con dos botones -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Escribe un cóctel...">
+            <button id="searchBtn" class="btn-primary">Buscar</button>
+            <button id="demoBtn" class="btn-secondary">API Simulada</button>
+        </div>
+
+        <!-- Sugerencias fijas -->
+        <p id="sugerencias"><strong>Sugerencias:</strong> Margarita, Martini, Mojito, Bloody Mary, Piña Colada</p>
+
+        <!-- Contenedor de resultados -->
+        <div id="result" class="result-grid"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

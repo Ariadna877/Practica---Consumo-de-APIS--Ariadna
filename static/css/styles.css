@@ -1,0 +1,131 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f4f4f4, #ffe5b4);
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+/* Contenedor principal */
+.container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff6f61;
+    font-size: 2.5rem;
+}
+
+/* Caja de búsqueda */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input {
+    flex: 1;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff9800;
+    box-shadow: 0 0 10px rgba(255,152,0,0.3);
+}
+
+/* Botones */
+button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff9800;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #e68900;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: #ff6f61;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #e65550;
+    transform: translateY(-2px);
+}
+
+/* Sugerencias */
+#sugerencias {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Grid para tarjetas */
+.result-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+/* Tarjetas de cócteles */
+.cocktail-card {
+    background: #fff8f0;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cocktail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.cocktail-card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.cocktail-card h2 {
+    margin-bottom: 10px;
+    color: #ff6f61;
+    font-size: 1.5rem;
+}
+
+.cocktail-card p {
+    margin: 5px 0;
+    color: #333;
+    font-size: 0.95rem;
+}
